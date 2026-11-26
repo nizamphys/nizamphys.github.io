@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nizamphys.github.io
 
-## Getting Started
+Personal academic website of **Dr. Mohammad Nizam**, Assistant Professor of Physics, Xiamen University Malaysia.
 
-First, run the development server:
+Live at **https://nizamphys.github.io**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## How it works
+A plain static site — no build step, no framework. GitHub Pages serves the files directly.
+
+```
+index.html            all page content (edit text here)
+404.html              not-found page
+assets/css/style.css  styles
+assets/js/main.js     menu, scroll effects, publication filter, hero animation
+assets/img/           photo, favicon, social-share card
+.nojekyll             tells GitHub Pages not to run Jekyll
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Editing
+- **Add a publication:** copy one `<li class="pub">…</li>` block in `index.html`, set `data-cat` to `neutrino`, `instrumentation` or `medical`.
+- **Change the photo:** replace `assets/img/mohammad-nizam.jpg` (square, ~600×600).
+- **Add a CV:** put `cv.pdf` in the repo root and add `<a class="btn btn--ghost" href="cv.pdf">CV</a>` to the hero buttons.
+- Preview locally: `python3 -m http.server` then open http://localhost:8000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## GitHub Pages settings
+Settings → Pages → Source: **Deploy from a branch** → Branch: **main** / **(root)**.
