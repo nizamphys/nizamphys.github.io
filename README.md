@@ -1,26 +1,29 @@
 # nizamphys.github.io
 
-Personal academic website of **Dr. Mohammad Nizam**, Assistant Professor of Physics, Xiamen University Malaysia.
-
+Academic website of **Dr. Mohammad Nizam**, Department of Physics, Xiamen University Malaysia.
 Live at **https://nizamphys.github.io**
 
-## How it works
-A plain static site — no build step, no framework. GitHub Pages serves the files directly.
-
+## Structure
 ```
-index.html            all page content (edit text here)
-404.html              not-found page
-assets/css/style.css  styles
-assets/js/main.js     menu, scroll effects, publication filter, hero animation
-assets/img/           photo, favicon, social-share card
-.nojekyll             tells GitHub Pages not to run Jekyll
+index.html, research.html, publications.html,
+group.html, teaching.html, collaborate.html   ← generated pages (served by GitHub Pages)
+404.html                                      ← not-found page
+assets/css/style.css   assets/js/main.js   assets/img/
+tools/pages/*.html        ← the text of each page (edit these)
+tools/publications.json   ← publication list
+tools/build.py            ← rebuilds the pages from the two above
+.nojekyll                 ← keeps GitHub Pages from running Jekyll
 ```
 
-## Editing
-- **Add a publication:** copy one `<li class="pub">…</li>` block in `index.html`, set `data-cat` to `neutrino`, `instrumentation` or `medical`.
-- **Change the photo:** replace `assets/img/mohammad-nizam.jpg` (square, ~600×600).
-- **Add a CV:** put `cv.pdf` in the repo root and add `<a class="btn btn--ghost" href="cv.pdf">CV</a>` to the hero buttons.
-- Preview locally: `python3 -m http.server` then open http://localhost:8000
+## Updating
+1. Edit the page text in `tools/pages/` or add a paper to `tools/publications.json`
+   (copy an entry; `theme` is `neutrino`, `solidstate`, `diagnostics` or `gaseous`;
+   `type` is `journal`, `conference`, `preprint` or `thesis`).
+2. Run `python tools/build.py`
+3. Commit and push. The site updates within a minute or two.
 
-## GitHub Pages settings
-Settings → Pages → Source: **Deploy from a branch** → Branch: **main** / **(root)**.
+Preview locally with `python -m http.server` and open http://localhost:8000
+
+Student photos: add `assets/img/people/<name>.jpg` and replace the initials
+`<div class="person__mono">LD</div>` in `tools/pages/group.html` with
+`<div class="person__mono"><img src="assets/img/people/<name>.jpg" alt=""></div>`.
