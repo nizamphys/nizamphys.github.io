@@ -17,6 +17,33 @@
     });
   }
 
+  // Back-to-top button
+  var top = document.querySelector(".to-top");
+  if (top) {
+    var onScroll = function () { top.classList.toggle("is-visible", window.scrollY > 600); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  // Highlight the current section in the "On this page" bar
+  var subLinks = Array.prototype.slice.call(document.querySelectorAll(".subnav a[href^='#']"));
+  if (subLinks.length && "IntersectionObserver" in window) {
+    var targets = subLinks.map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        subLinks.forEach(function (a) {
+          var on = a.getAttribute("href") === "#" + en.target.id;
+          a.classList.toggle("is-active", on);
+          if (on && a.scrollIntoView && window.innerWidth < 900) {
+            a.parentNode.parentNode.scrollLeft = a.parentNode.offsetLeft - 20;
+          }
+        });
+      });
+    }, { rootMargin: "-35% 0px -60% 0px" });
+    targets.forEach(function (t) { if (t) io.observe(t); });
+  }
+
   // Publication filters
   var filters = document.querySelectorAll(".filter");
   if (!filters.length) return;

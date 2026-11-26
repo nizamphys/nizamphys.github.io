@@ -1,15 +1,27 @@
     <header class="page-head">
       <div class="wrap">
+        {{CRUMBS}}
         <span class="label">Research group</span>
         <h1>The group</h1>
-        <p class="lede">A small, growing team at Xiamen University Malaysia working on neutrino physics and detector development, with close links to SCIPP at UC Santa Cruz, CERN DRD3 and partners across Asia.</p>
+        <p class="lede">A growing team at Xiamen University Malaysia working on neutrino physics and detector development, with close links to SCIPP at UC Santa Cruz, CERN DRD3 and partners across Asia.</p>
       </div>
     </header>
-
-    <section class="section">
+    <nav class="subnav" aria-label="On this page">
       <div class="wrap">
-        <div class="pi">
-          <img src="assets/img/mohammad-nizam.jpg" width="150" height="150" alt="Dr. Mohammad Nizam">
+        <ul>
+          <li class="subnav__title">On this page</li>
+          <li><a href="#members">Members &amp; projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#join">Join the group</a></li>
+          <li><a href="#apply">How to apply</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section" id="members">
+      <div class="wrap">
+        <div class="card pi" style="margin-bottom:1.6rem">
+          <img src="assets/img/mohammad-nizam.jpg" width="130" height="130" alt="Dr. Mohammad Nizam">
           <div>
             <span class="label">Principal investigator</span>
             <h3>Dr. Mohammad Nizam</h3>
@@ -17,104 +29,122 @@
           </div>
         </div>
 
-        <span class="label">Members</span>
+        <div class="section__head"><h2>Members &amp; projects</h2></div>
         <div class="people">
-          <div class="person">
-            <div class="person__mono" aria-hidden="true">LD</div>
+          <article class="person">
+            <img src="assets/img/people/placeholder.svg" alt="Photo of Liew Dek Hao (to be added)" width="92" height="112">
             <div>
               <span class="role">Master's student</span>
               <h3>Liew Dek Hao</h3>
-              <p>Machine learning for atmospheric neutrino analysis</p>
+              <p class="project">Atmospheric neutrino and muon background rejection in the TRIDENT experiment</p>
+              <p class="note">First-author preprint (2026) · NuFact 2026 talk · ECFA-WISPP 2027, CERN</p>
             </div>
-          </div>
-          <div class="person">
-            <div class="person__mono" aria-hidden="true">YJ</div>
+          </article>
+          <article class="person">
+            <img src="assets/img/people/placeholder.svg" alt="Photo of Yong Jig Tian (to be added)" width="92" height="112">
             <div>
               <span class="role">Project student</span>
               <h3>Yong Jig Tian</h3>
-              <p>Undergraduate research project</p>
+              <p class="project">Development of Multi-gap Resistive Plate Chambers</p>
+              <p class="note">Admitted to the PhD programme at Shanghai Jiao Tong University</p>
             </div>
-          </div>
-          <div class="person">
-            <div class="person__mono" aria-hidden="true">LC</div>
+          </article>
+          <article class="person">
+            <img src="assets/img/people/placeholder.svg" alt="Photo of Liew Chi Shyang (to be added)" width="92" height="112">
             <div>
               <span class="role">Project student</span>
               <h3>Liew Chi Shyang</h3>
-              <p>Undergraduate research project</p>
+              <p class="project">Neutrino mass-ordering sensitivity of a 20-kton liquid-scintillator detector</p>
             </div>
-          </div>
-          <div class="person">
-            <div class="person__mono" aria-hidden="true">LX</div>
+          </article>
+          <article class="person">
+            <img src="assets/img/people/placeholder.svg" alt="Photo of Li Xincen (to be added)" width="92" height="112">
             <div>
               <span class="role">Project student</span>
               <h3>Li Xincen</h3>
-              <p>Undergraduate research project</p>
+              <p class="project">Searching for new physics with ultra-high-energy astrophysical neutrinos</p>
             </div>
-          </div>
-          <div class="person">
-            <div class="person__mono" aria-hidden="true">KJ</div>
+          </article>
+          <article class="person">
+            <img src="assets/img/people/placeholder.svg" alt="Photo of Kim Jun Yew (to be added)" width="92" height="112">
             <div>
               <span class="role">Project student</span>
               <h3>Kim Jun Yew</h3>
-              <p>Undergraduate research project</p>
+              <p class="project">Simulation and fabrication of Resistive Plate Chambers</p>
             </div>
-          </div>
-          <div class="person">
-            <div class="person__mono" aria-hidden="true">KM</div>
+          </article>
+          <article class="person">
+            <img src="assets/img/people/placeholder.svg" alt="Photo of Kim Min Nee (to be added)" width="92" height="112">
             <div>
               <span class="role">Project student</span>
               <h3>Kim Min Nee</h3>
-              <p>Undergraduate research project</p>
+              <p class="project">TCAD simulation of radiation damage in monocrystalline CVD diamond sensors</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="join">
+    <section class="section section--white" id="achievements">
+      <div class="wrap split">
+        <div>
+          <span class="label">Student achievements</span>
+          <h2>Where our students go</h2>
+          <p class="muted" style="font-size:.95rem">Students in the group present at international meetings, attend leading schools and move on to doctoral programmes.</p>
+        </div>
+        <ul class="news">
+          <li><time>Feb 2027</time><div><h3>ECFA Winter Instrumentation School, CERN</h3><p>Liew Dek Hao selected for ECFA-WISPP 2027.</p></div></li>
+          <li><time>Sep 2026</time><div><h3>NuFact 2026, Shanghai</h3><p>Liew Dek Hao presented the group's work on atmospheric neutrinos.</p></div></li>
+          <li><time>Jul 2026</time><div><h3>Vietnam School on Neutrinos</h3><p>Liew Dek Hao attended VSoN 2026, Quy Nhon.</p></div></li>
+          <li><time>2026</time><div><h3>PhD at Shanghai Jiao Tong University</h3><p>Yong Jig Tian admitted to the doctoral programme.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="join">
       <div class="wrap">
         <div class="section__intro">
           <span class="label">Opportunities</span>
           <h2>Join the group</h2>
-          <p>I am always glad to hear from motivated students who want to work on real physics problems and real detectors. Students in the group take part in the full research cycle, from simulation and hardware to analysis and publication, and can connect with international collaborators.</p>
+          <p>Motivated students are always welcome. Students in the group take part in the full research cycle, from simulation and hardware to analysis and publication, and work with international collaborators.</p>
         </div>
-        <div class="paths">
-          <div>
+        <div class="grid-4 paths">
+          <div class="card">
             <h3>PhD</h3>
-            <p>Doctoral projects in neutrino phenomenology and analysis, or in detector development: LGAD and diamond sensors, gaseous detectors, and diagnostics. Strong physics fundamentals and programming experience are valued.</p>
+            <p>Doctoral projects in neutrino physics and analysis, or in detector development: LGAD and diamond sensors, gaseous detectors and diagnostics.</p>
           </div>
-          <div>
+          <div class="card">
             <h3>Master's by research</h3>
-            <p>Focused one- to two-year projects, for example machine-learning analysis of neutrino events, Geant4 or TCAD simulation, or characterisation of detector prototypes.</p>
+            <p>Focused projects such as machine-learning analysis of neutrino events, Geant4 or TCAD simulation, or detector prototyping.</p>
           </div>
-          <div>
-            <h3>Final-year &amp; project students</h3>
-            <p>Undergraduate projects for physics students at Xiamen University Malaysia, designed to give a genuine first research experience with simulation, data or hardware.</p>
+          <div class="card">
+            <h3>Final-year projects</h3>
+            <p>Undergraduate projects for physics students at XMUM, giving a genuine first research experience with simulation, data or hardware.</p>
           </div>
-          <div>
-            <h3>Internships &amp; visiting students</h3>
+          <div class="card">
+            <h3>Internships &amp; visitors</h3>
             <p>Short research stays for students from other universities, when a suitable project and supervision are available.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--white" id="apply">
       <div class="wrap split">
         <div>
           <span class="label">How to apply</span>
           <h2>Getting in touch</h2>
         </div>
         <div>
-          <p>Please email <a href="mailto:mohammad.nizam@xmu.edu.my?subject=Prospective%20student">mohammad.nizam@xmu.edu.my</a> with the subject line <em>“Prospective student – [PhD / Master's / Project / Internship]”</em>, and include:</p>
+          <p>Email <a href="mailto:mohammad.nizam@xmu.edu.my?subject=Prospective%20student">mohammad.nizam@xmu.edu.my</a> with the subject line <em>“Prospective student – [PhD / Master's / Project / Internship]”</em>, and include:</p>
           <ul class="checklist">
             <li>a CV and academic transcripts;</li>
             <li>a short paragraph on which research theme interests you and why;</li>
             <li>any programming, laboratory or research experience;</li>
             <li>your intended start date.</li>
           </ul>
-          <div class="notice" style="margin-top:2rem">
-            <p>Formal admission to postgraduate programmes is through Xiamen University Malaysia. Funded positions, when available, are announced on this page.</p>
+          <div class="notice">
+            <p>Formal admission to postgraduate programmes is through Xiamen University Malaysia. Funded positions, when available, are announced on this page and on the <a href="news.html">News</a> page.</p>
           </div>
         </div>
       </div>

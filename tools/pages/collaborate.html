@@ -1,87 +1,120 @@
     <header class="page-head">
       <div class="wrap">
+        {{CRUMBS}}
         <span class="label">Collaborate</span>
         <h1>Collaborations &amp; partnerships</h1>
-        <p class="lede">Particle physics advances through collaboration. I work with laboratories, universities and experiments across Asia, Europe and North America, and I welcome new partners in research, industry and education.</p>
+        <p class="lede">I work with laboratories, universities and experiments across Asia, Europe and North America, and welcome new partners in research, industry and education.</p>
       </div>
     </header>
+    <nav class="subnav" aria-label="On this page">
+      <div class="wrap">
+        <ul>
+          <li class="subnav__title">On this page</li>
+          <li><a href="#collaborations">Collaborations</a></li>
+          <li><a href="#funding">Funding &amp; service</a></li>
+          <li><a href="#partner">Partner with us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <section class="section">
+    <section class="section" id="collaborations">
       <div class="wrap">
         <div class="section__intro">
           <span class="label">Current collaborations</span>
           <h2>Where the work happens</h2>
         </div>
-        <div class="collabs">
-          <div class="collab">
+        <div class="grid-3">
+          <div class="card collab">
             <p class="meta">CERN · Geneva</p>
             <h3>DRD3 Collaboration</h3>
             <p>CERN's detector R&amp;D collaboration on solid-state detectors, developing the silicon and diamond sensor technologies of future experiments.</p>
           </div>
-          <div class="collab">
-            <p class="meta">UC Santa Cruz · California</p>
+          <div class="card collab">
+            <p class="meta">UC Santa Cruz · USA</p>
             <h3>Santa Cruz Institute for Particle Physics</h3>
             <p>Continuing research on ultra-fast silicon detectors, AC-LGADs and diamond sensors as a Research Associate.</p>
           </div>
-          <div class="collab">
-            <p class="meta">Mumbai &amp; Hyderabad · India</p>
-            <h3>Tata Institute of Fundamental Research</h3>
-            <p>Collaboration with TIFR, where my doctoral and early postdoctoral research on neutrino physics and gaseous detectors was carried out.</p>
+          <div class="card collab">
+            <p class="meta">Hyderabad · India</p>
+            <h3>TIFR Hyderabad</h3>
+            <p>Collaboration with the Tata Institute of Fundamental Research, Hyderabad.</p>
           </div>
-          <div class="collab">
+          <div class="card collab">
             <p class="meta">Shanghai · China</p>
             <h3>Tsung-Dao Lee Institute</h3>
-            <p>Collaboration with TDLI on particle physics and detector research.</p>
+            <p>Collaboration with TDLI on neutrino physics and detector research.</p>
           </div>
-          <div class="collab">
+          <div class="card collab">
             <p class="meta">Xiamen · China</p>
             <h3>Xiamen University</h3>
             <p>Adjunct appointment linking the Malaysia and China campuses in teaching and research.</p>
           </div>
-          <div class="collab">
+          <div class="card collab">
             <p class="meta">Professional societies</p>
             <h3>AAPPS-DPP &amp; PSSI</h3>
-            <p>Member of the Association of Asia Pacific Physical Societies Division of Plasma Physics, and of the Plasma Science Society of India.</p>
+            <p>Member of the Association of Asia Pacific Physical Societies Division of Plasma Physics and of the Plasma Science Society of India.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt">
+    <section class="section section--white" id="funding">
+      <div class="wrap grid-2">
+        <div>
+          <span class="label">Funding</span>
+          <h2>Research support</h2>
+          <div class="card" style="box-shadow:none">
+            <h3 style="font-size:1.2rem">XMUM Research Fund (XMUMRF)</h3>
+            <p style="margin:0;color:var(--ink-2)">Xiamen University Malaysia's internal research fund, supporting the group's work.</p>
+          </div>
+        </div>
+        <div>
+          <span class="label">Professional service</span>
+          <h2>Service to the community</h2>
+          <div class="card" style="box-shadow:none">
+            <h3 style="font-size:1.2rem">Referee, <em>Measurement</em> (Elsevier)</h3>
+            <p style="margin:0;color:var(--ink-2)">Peer review for the journal of the International Measurement Confederation (IMEKO).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="partner">
       <div class="wrap">
         <div class="section__intro">
           <span class="label">Partner with us</span>
           <h2>What we can do together</h2>
         </div>
-        <div class="offer">
-          <div id="experiments">
+        <div class="grid-3 offer">
+          <div class="card">
             <h3>Experiments &amp; research groups</h3>
-            <p>For large international collaborations and small experiments alike, I can contribute:</p>
+            <p>For large international collaborations and small experiments alike:</p>
             <ul>
               <li>sensor design, simulation and characterisation;</li>
               <li>Geant4 detector simulation and physics-sensitivity studies;</li>
-              <li>timing and position reconstruction, and data analysis;</li>
+              <li>timing and position reconstruction and data analysis;</li>
               <li>students and researchers based in Southeast Asia.</li>
             </ul>
           </div>
-          <div id="industry">
+          <div class="card">
             <h3>Industry partners</h3>
             <p>For companies developing sensors, electronics or imaging systems:</p>
             <ul>
-              <li>independent characterisation of silicon, diamond and gaseous detectors;</li>
-              <li>TCAD and Geant4 modelling of devices and systems;</li>
+              <li>characterisation of silicon, diamond and gaseous detectors;</li>
+              <li>TCAD, Geant4 and finite-element modelling of devices and systems;</li>
               <li>prototype testing for beam, X-ray and radiation diagnostics;</li>
               <li>joint grant applications and student projects.</li>
             </ul>
           </div>
-          <div id="funders">
+          <div class="card">
             <h3>Funding agencies &amp; institutions</h3>
-            <p>Programmes that I am well placed to lead or contribute to:</p>
+            <p>Programmes I am well placed to lead or contribute to:</p>
             <ul>
               <li>detector R&amp;D and instrumentation capacity in Malaysia and the region;</li>
               <li>participation in international experiments and CERN R&amp;D;</li>
-              <li>medical, security and industrial applications of radiation detectors;</li>
-              <li>training of the next generation of experimental physicists.</li>
+              <li>medical, security and industrial uses of radiation detectors;</li>
+              <li>training the next generation of experimental physicists.</li>
             </ul>
           </div>
         </div>
@@ -94,15 +127,16 @@
           <span class="label">Contact</span>
           <h2>Get in touch</h2>
           <p>For collaboration, partnership, speaking invitations or student enquiries, email is the best way to reach me. Please include a few lines on what you have in mind.</p>
-          <div class="actions" style="margin-top:2rem">
+          <div class="actions" style="margin-top:1.4rem">
             <a class="btn btn--line" href="mailto:mohammad.nizam@xmu.edu.my">mohammad.nizam@xmu.edu.my</a>
+            <a class="btn btn--gold" href="{{CV}}">Download CV</a>
           </div>
         </div>
         <dl class="contact-dl">
           <div><dt>Office</dt><dd>A4-472, Department of Physics</dd></div>
           <div><dt>Address</dt><dd>Xiamen University Malaysia<br>Jalan Sunsuria, Bandar Sunsuria<br>43900 Sepang, Selangor Darul Ehsan, Malaysia</dd></div>
           <div><dt>Map</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Xiamen+University+Malaysia">Xiamen University Malaysia on Google Maps</a></dd></div>
-          <div><dt>Profiles</dt><dd><a href="https://orcid.org/0000-0002-8151-2168">ORCID</a> · <a href="https://inspirehep.net/authors/1844203">INSPIRE-HEP</a> · <a href="https://www.xmu.edu.my/staff/mohammad-nizam">XMUM</a></dd></div>
+          <div><dt>Profiles</dt><dd><a href="https://scholar.google.com/citations?user=HrdwcJQAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://inspirehep.net/authors/1844203">INSPIRE-HEP</a> · <a href="https://orcid.org/0000-0002-8151-2168">ORCID</a> · <a href="https://www.researchgate.net/profile/Mohammad-Nizam">ResearchGate</a> · <a href="https://www.linkedin.com/in/nizamphys/">LinkedIn</a></dd></div>
         </dl>
       </div>
     </section>

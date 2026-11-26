@@ -1,18 +1,25 @@
     <header class="page-head">
       <div class="wrap">
+        {{CRUMBS}}
         <span class="label">Research</span>
         <h1>From fundamental questions to working instruments</h1>
-        <p class="lede">My research in experimental high energy physics connects two scales: the physics of neutrinos and the universe, and the detectors that measure it. Each theme below feeds the others.</p>
-        <ul class="toc">
-          <li><span>I</span><a href="#neutrino">Neutrino &amp; astroparticle physics</a></li>
-          <li><span>II</span><a href="#solid-state">Solid-state detectors</a></li>
-          <li><span>III</span><a href="#gaseous">Gaseous detectors</a></li>
-          <li><span>IV</span><a href="#diagnostics">Beam &amp; plasma diagnostics</a></li>
-          <li><span>V</span><a href="#imaging">Medical imaging &amp; muon tomography</a></li>
-          <li><span>&para;</span><a href="#methods">Methods &amp; capabilities</a></li>
-        </ul>
+        <p class="lede">My research in experimental high energy physics connects the physics of neutrinos and the universe with the detectors that measure it. Each theme below feeds the others.</p>
       </div>
     </header>
+    <nav class="subnav" aria-label="On this page">
+      <div class="wrap">
+        <ul>
+          <li class="subnav__title">On this page</li>
+          <li><a href="#neutrino">I · Neutrinos</a></li>
+          <li><a href="#solid-state">II · Solid-state</a></li>
+          <li><a href="#gaseous">III · Gaseous</a></li>
+          <li><a href="#diagnostics">IV · Diagnostics</a></li>
+          <li><a href="#imaging">V · Imaging</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="wrap">
       <section class="theme" id="neutrino">
@@ -20,24 +27,24 @@
         <div class="theme__body">
           <div class="theme__text">
             <h2>Neutrino &amp; Astroparticle Physics</h2>
-            <p>Neutrinos are the most abundant matter particles in the universe and the least understood. We still do not know the ordering of their masses, their absolute mass scale, or whether they violate CP symmetry, a possible key to why the universe contains matter at all.</p>
-            <p>My work uses detailed detector simulation and statistical analysis to ask what experiments can learn. For the magnetised Iron Calorimeter (ICAL) of the India-based Neutrino Observatory, I developed hadron energy reconstruction from Geant4 simulations and showed that ICAL can distinguish matter-modified from vacuum oscillations of atmospheric neutrinos. I have also examined the tension between the T2K and NOνA appearance data on the CP phase.</p>
-            <p>With my students, I now apply machine learning to atmospheric neutrino events, separating neutrinos from antineutrinos to improve sensitivity to leptonic CP violation in large liquid-scintillator detectors.</p>
+            <p>Neutrinos are the most abundant matter particles in the universe and the least understood. We still do not know the ordering of their masses, their absolute mass scale, or whether they violate CP symmetry, which may help explain why the universe contains more matter than antimatter.</p>
+            <p>At TIFR I developed hadron energy reconstruction for the magnetised Iron Calorimeter (ICAL) of the proposed India-based Neutrino Observatory using Geant4, and with colleagues showed that ICAL can distinguish matter-modified from vacuum oscillations of atmospheric neutrinos at 3σ in ten years. We also traced the disagreement between T2K and NOνA on the CP phase to their electron-neutrino appearance data.</p>
+            <p>My group now applies machine learning to atmospheric neutrinos: separating neutrinos from antineutrinos to improve CP-violation sensitivity in a 20-kton liquid-scintillator detector, studying its sensitivity to the mass ordering, rejecting atmospheric neutrino and muon backgrounds for the TRIDENT deep-sea neutrino telescope, and searching for new physics with ultra-high-energy astrophysical neutrinos.</p>
           </div>
           <aside class="aside">
             <h4>Open questions</h4>
             <ul>
-              <li>Neutrino mass ordering</li>
-              <li>Absolute neutrino mass</li>
+              <li>Neutrino mass ordering and absolute mass</li>
               <li>Matter effects in oscillations</li>
               <li>CP violation in the lepton sector</li>
-              <li>Neutrinoless double beta decay</li>
-              <li>Dark matter</li>
+              <li>New physics with astrophysical neutrinos</li>
+              <li>Neutrinoless double beta decay; dark matter</li>
             </ul>
             <h4>Key papers</h4>
             <ul>
               <li><a href="https://doi.org/10.1016/j.nuclphysb.2020.115251">Matter vs vacuum oscillations</a>, Nucl. Phys. B (2020)</li>
               <li><a href="https://doi.org/10.1142/S0217732320500212">T2K–NOνA tensions</a>, Mod. Phys. Lett. A (2020)</li>
+              <li><a href="https://doi.org/10.1007/s12043-020-01986-x">Hadron energy estimation</a>, Pramana (2020)</li>
               <li><a href="https://arxiv.org/abs/2611.11474">ML-assisted ν/ν̄ discrimination</a>, arXiv (2026)</li>
             </ul>
           </aside>
@@ -49,22 +56,27 @@
         <div class="theme__body">
           <div class="theme__text">
             <h2>Solid-State Detector R&amp;D</h2>
-            <p>Future colliders and rare-event experiments need sensors that measure position and time together, to tens of picoseconds, while surviving intense radiation. Low Gain Avalanche Diodes (LGADs) provide this through a thin internal gain layer.</p>
-            <p>At SCIPP I worked on AC-coupled LGADs, whose resistive readout shares charge between neighbouring electrodes and allows fine spatial resolution with fewer channels. We studied signal sharing with laser and test beams and long-distance signal propagation along strips, and I carried out TCAD simulations of their charge collection. This work supports 4D tracking for future facilities and the high-granularity active target of the PIONEER experiment.</p>
-            <p>In parallel I study electronic-grade single-crystal diamond, which is radiation hard and fast. My recent work follows radiation damage in diamond sensors in real time. I continue this programme within the CERN DRD3 collaboration on solid-state detectors.</p>
+            <p>Future colliders and rare-event experiments need sensors that measure position and time together, to tens of picoseconds, while surviving intense radiation. Low Gain Avalanche Diodes (LGADs) achieve this with a thin internal gain layer.</p>
+            <p>At SCIPP I worked on AC-coupled LGADs, whose resistive readout shares the signal between neighbouring electrodes and gives fine spatial resolution with fewer channels. We studied signal sharing with lasers and test beams and long-distance signal propagation along strips, and I carried out TCAD simulations of their charge collection. This work supports 4D tracking for future facilities, including the high-granularity active target proposed for the PIONEER experiment.</p>
+            <p>I also study electronic-grade single-crystal CVD diamond, which is fast and radiation hard. In a 67.5 MeV proton beam at the Crocker Nuclear Laboratory, UC Davis, we followed a 40 µm diamond sensor in real time up to a fluence of about 4 × 10<sup>16</sup> p/cm² and measured a damage constant of (3.3 ± 0.3) × 10<sup>−18</sup> cm²/(p·µm). My group continues with TCAD studies of radiation damage in diamond, within the CERN DRD3 collaboration on solid-state detectors.</p>
+            <figure class="fig fig--wide">
+              <img src="assets/img/lab/placeholder.svg" alt="Test-beam setup photo (to be added)" loading="lazy">
+              <figcaption><b>Test-beam setup</b> for the real-time radiation-damage study of monocrystalline diamond sensors, 67.5 MeV proton beam, Crocker Nuclear Laboratory, UC Davis (<a href="https://doi.org/10.1088/1748-0221/19/09/P09018">JINST 19 (2024) P09018</a>).</figcaption>
+            </figure>
           </div>
           <aside class="aside">
             <h4>Technologies</h4>
             <ul>
               <li>LGADs and AC-LGADs (resistive silicon detectors)</li>
-              <li>Single-crystal diamond sensors</li>
-              <li>Fast front-end and ASIC readout</li>
+              <li>Single-crystal CVD diamond sensors</li>
+              <li>Fast front-end electronics and ASICs</li>
               <li>Radiation-damage studies</li>
             </ul>
             <h4>Key papers</h4>
             <ul>
               <li><a href="https://doi.org/10.1088/1748-0221/19/09/P09018">Radiation damage in diamond</a>, JINST (2024)</li>
               <li><a href="https://doi.org/10.1016/j.nima.2024.169478">Long-distance signal propagation in AC-LGAD</a>, NIM A (2024)</li>
+              <li><a href="https://doi.org/10.1016/j.nima.2022.167541">Charge sharing in AC-LGADs</a>, NIM A (2023)</li>
               <li><a href="https://arxiv.org/abs/2305.15576">TCAD simulation of AC-LGADs</a>, arXiv (2023)</li>
             </ul>
           </aside>
@@ -76,8 +88,8 @@
         <div class="theme__body">
           <div class="theme__text">
             <h2>Gaseous Detector R&amp;D</h2>
-            <p>Gaseous detectors remain the most economical way to instrument very large areas with good timing. Resistive Plate Chambers form the active layers of the ICAL detector, and their multi-gap variant (MRPC) reaches time resolutions suitable for time-of-flight measurements.</p>
-            <p>At TIFR I built and characterised six-gap glass MRPCs, studying their efficiency and timing for imaging applications. My current interests include Time Projection Chambers and gaseous detectors for muon tomography and large-area tracking.</p>
+            <p>Gaseous detectors remain the most economical way to instrument very large areas with good timing. Resistive Plate Chambers (RPCs) are the active layers of the ICAL design, and their multi-gap version (MRPC) reaches the time resolution needed for time-of-flight measurements.</p>
+            <p>At TIFR I built and characterised single-gap RPCs and six-gap glass MRPCs, and used stacks of RPCs to reconstruct cosmic-muon tracks. At Xiamen University Malaysia my students are now simulating, fabricating and testing RPCs and MRPCs, building local capability in gaseous detectors for imaging and muon tomography.</p>
           </div>
           <aside class="aside">
             <h4>Technologies</h4>
@@ -88,7 +100,8 @@
             </ul>
             <h4>Key papers</h4>
             <ul>
-              <li><a href="https://arxiv.org/abs/1907.09379">Six-gap glass MRPCs and a PET device</a>, arXiv (2019)</li>
+              <li><a href="https://doi.org/10.1088/1748-0221/14/09/C09010">Six-gap MRPC for time-of-flight PET</a>, JINST (2019)</li>
+              <li><a href="https://arxiv.org/abs/1907.09379">Six-gap glass MRPCs</a>, arXiv (2019)</li>
             </ul>
           </aside>
         </div>
@@ -99,17 +112,17 @@
         <div class="theme__body">
           <div class="theme__text">
             <h2>Beam &amp; Plasma Diagnostics</h2>
-            <p>Synchrotrons and X-ray free-electron lasers deliver extremely intense, short pulses, and their users need to know the position and intensity of each pulse without blocking the beam. Thin diamond sensors can sit in the beam as pass-through monitors.</p>
-            <p>With colleagues at SCIPP and partner laboratories I helped develop diamond-based diagnostics for synchrotron and next-generation XFEL beams, complete diamond-sensor systems for accelerator diagnostics, and fast readout including the multi-GHz Fastpulse Precision Sampler ASIC. I also worked on beam diagnostics for the Isotope Production Facility at Los Alamos National Laboratory.</p>
-            <p>The same fast, radiation-hard sensing is valuable for plasma physics, and I am extending this work to plasma diagnostics as a member of AAPPS-DPP and the Plasma Science Society of India.</p>
+            <p>Synchrotrons and X-ray free-electron lasers deliver intense, very short pulses, and users need to know the position and intensity of each pulse without blocking the beam. Thin diamond sensors can sit in the beam as pass-through monitors.</p>
+            <p>Within the Advanced Accelerator Diagnostics collaboration of UC campuses with LBNL, LANL and SLAC, I helped develop diamond-based diagnostics for synchrotron and next-generation XFEL beams, integrated multi-GHz detection systems, and fast readout such as the Fastpulse Precision Sampler ASIC. I also characterised LGADs with synchrotron X-rays and contributed to a submerged wireless imaging monitor for the Isotope Production Facility at Los Alamos National Laboratory.</p>
+            <p>The same fast, radiation-hard sensing suits plasma physics. My group is studying the feasibility of diamond-based diagnostics for fusion plasmas.</p>
           </div>
           <aside class="aside">
             <h4>Applications</h4>
             <ul>
               <li>X-ray pass-through beam monitors</li>
-              <li>Accelerator beam diagnostics</li>
-              <li>Ultrafast ionizing-radiation diagnostics</li>
-              <li>Plasma diagnostics</li>
+              <li>Multi-GHz accelerator diagnostics</li>
+              <li>Isotope-production beam monitoring</li>
+              <li>Fusion plasma diagnostics</li>
             </ul>
             <h4>Key papers</h4>
             <ul>
@@ -126,60 +139,76 @@
         <div class="theme__body">
           <div class="theme__text">
             <h2>Medical Imaging &amp; Muon Tomography</h2>
-            <p>Detectors developed for particle physics often become tools for medicine and society. Positron Emission Tomography improves when each photon pair is timed precisely. My doctoral work studied the feasibility of a time-of-flight PET system based on MRPCs, which could offer large coverage at modest cost.</p>
-            <p>I am interested in fast-timing sensors for hadron-therapy monitoring and in muon tomography, which uses cosmic-ray muons to image dense or inaccessible structures without any artificial radiation source.</p>
+            <p>Detectors built for particle physics often become tools for medicine and society. Positron Emission Tomography improves when each photon pair is timed precisely. My doctoral work showed that a time-of-flight PET system based on MRPCs is feasible and could offer large coverage at modest cost, and my group is now developing MRPCs for PET imaging.</p>
+            <p>I am also interested in fast-timing sensors for hadron-therapy monitoring, and in muon tomography, which uses naturally occurring cosmic-ray muons to image dense or inaccessible structures.</p>
           </div>
           <aside class="aside">
             <h4>Directions</h4>
             <ul>
-              <li>Time-of-flight PET</li>
+              <li>Time-of-flight PET with MRPCs</li>
               <li>Hadron-therapy monitoring</li>
               <li>Muon tomography</li>
             </ul>
             <h4>Key papers</h4>
             <ul>
               <li><a href="https://doi.org/10.1088/1748-0221/14/09/C09010">Time-of-flight PET with six-gap MRPC</a>, JINST (2019)</li>
+              <li><a href="https://doi.org/10.22323/1.340.0884">MRPC-based PET device</a>, PoS ICHEP2018 (2019)</li>
             </ul>
           </aside>
         </div>
       </section>
     </div>
 
-    <section class="section section--alt" id="methods">
+    <section class="section section--white" id="tools">
       <div class="wrap">
         <div class="section__intro">
-          <span class="label">Methods &amp; capabilities</span>
-          <h2>How the work is done</h2>
-          <p>The group combines simulation, laboratory characterisation and data analysis, so that a detector concept can be taken from model to measurement.</p>
+          <span class="label">Methods &amp; tools</span>
+          <h2>Simulation, computation and analysis</h2>
+          <p>We take a detector concept from model to measurement: simulating physics and devices, building and testing prototypes, and analysing the data.</p>
         </div>
-        <div class="capabilities">
-          <div>
-            <h3>Simulation</h3>
-            <ul>
-              <li>Geant4 detector and physics simulation</li>
-              <li>TCAD device simulation of silicon and diamond sensors</li>
-              <li>Oscillation sensitivity studies</li>
-              <li>Machine learning for event classification</li>
-            </ul>
+        <div class="grid-3">
+          <div class="toolgroup">
+            <h3>Detector &amp; particle simulation</h3>
+            <ul class="chips"><li>Geant4</li><li>G4beamline</li><li>Garfield++</li><li>Allpix²</li></ul>
           </div>
-          <div>
-            <h3>Characterisation</h3>
-            <ul>
-              <li>Laser transient-current technique (TCT)</li>
-              <li>Test-beam measurements</li>
-              <li>Current–voltage and capacitance–voltage studies</li>
-              <li>Radiation-damage studies</li>
-            </ul>
+          <div class="toolgroup">
+            <h3>Device &amp; field modelling</h3>
+            <ul class="chips"><li>Synopsys Sentaurus TCAD</li><li>Silvaco TCAD</li><li>DEVSIM</li><li>Elmer FEM</li><li>COMSOL Multiphysics</li></ul>
           </div>
-          <div>
-            <h3>Electronics &amp; analysis</h3>
-            <ul>
-              <li>Fast front-end and ASIC testing</li>
-              <li>Data acquisition systems</li>
-              <li>Timing and position reconstruction</li>
-              <li>Statistical analysis with ROOT and Python</li>
-            </ul>
+          <div class="toolgroup">
+            <h3>Physics generators &amp; fits</h3>
+            <ul class="chips"><li>GENIE</li><li>GLoBES</li><li>SNOwGLoBES</li><li>MadGraph</li></ul>
           </div>
+          <div class="toolgroup">
+            <h3>Electronics</h3>
+            <ul class="chips"><li>FPGA</li><li>LTspice</li><li>Fast front-end &amp; ASIC testing</li><li>DAQ systems</li></ul>
+          </div>
+          <div class="toolgroup">
+            <h3>Laboratory techniques</h3>
+            <ul class="chips"><li>Test beams</li><li>Laser TCT</li><li>Alpha &amp; radioactive sources</li><li>Synchrotron X-rays</li><li>I–V / C–V</li><li>RPC fabrication</li></ul>
+          </div>
+          <div class="toolgroup">
+            <h3>Analysis &amp; computing</h3>
+            <ul class="chips"><li>ROOT</li><li>C++</li><li>Python</li><li>Machine learning</li><li>Statistical analysis</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="facilities">
+      <div class="wrap">
+        <div class="section__intro">
+          <span class="label">Facilities</span>
+          <h2>Laboratory &amp; equipment</h2>
+          <p>Detector development and testing at Xiamen University Malaysia. Photographs and an equipment list will be added here.</p>
+        </div>
+        <div class="grid-3">
+          <figure class="fig"><img src="assets/img/lab/placeholder.svg" alt="Laboratory photo (to be added)" loading="lazy"><figcaption><b>Detector laboratory</b></figcaption></figure>
+          <figure class="fig"><img src="assets/img/lab/placeholder.svg" alt="RPC and MRPC fabrication photo (to be added)" loading="lazy"><figcaption><b>RPC &amp; MRPC development</b></figcaption></figure>
+          <figure class="fig"><img src="assets/img/lab/placeholder.svg" alt="Test stand photo (to be added)" loading="lazy"><figcaption><b>Detector test setup</b></figcaption></figure>
+          <figure class="fig"><img src="assets/img/lab/placeholder.svg" alt="Electronics photo (to be added)" loading="lazy"><figcaption><b>Electronics &amp; data acquisition</b></figcaption></figure>
+          <figure class="fig"><img src="assets/img/lab/placeholder.svg" alt="Equipment photo (to be added)" loading="lazy"><figcaption><b>Equipment</b></figcaption></figure>
+          <figure class="fig"><img src="assets/img/lab/placeholder.svg" alt="Apparatus photo (to be added)" loading="lazy"><figcaption><b>Apparatus</b></figcaption></figure>
         </div>
       </div>
     </section>

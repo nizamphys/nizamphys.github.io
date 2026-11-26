@@ -1,40 +1,31 @@
     <header class="page-head">
       <div class="wrap">
+        {{CRUMBS}}
         <span class="label">Teaching</span>
         <h1>Teaching</h1>
-        <p class="lede">I teach courses that link classical foundations to the frontiers of modern physics, and I bring examples from current experiments into the classroom wherever I can.</p>
+        <p class="lede">Courses that link classical foundations to the frontiers of modern physics, with examples from current experiments. Lecture slides, notes, videos and demonstrations can be downloaded below as they are released.</p>
       </div>
     </header>
+    <nav class="subnav" aria-label="On this page">
+      <div class="wrap">
+        <ul>
+          <li class="subnav__title">Courses</li>
+          <li><a href="#nuclear-particle">Nuclear &amp; Particle Physics</a></li>
+          <li><a href="#electrodynamics">Electrodynamics</a></li>
+          <li><a href="#astrophysics">Astrophysics &amp; Astronomy</a></li>
+          <li><a href="#supervision">Supervision</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <section class="section">
       <div class="wrap">
-        <div class="courses">
-          <article class="course">
-            <h3>Nuclear and Particle Physics</h3>
-            <div>
-              <p>The structure of nuclei and the fundamental particles and forces, from radioactive decay to the Standard Model, and the experiments that established them.</p>
-              <p class="topics">Nuclear properties and models · radioactivity · interactions of radiation with matter · particle detectors and accelerators · quarks, leptons and symmetries · neutrino physics</p>
-            </div>
-          </article>
-          <article class="course">
-            <h3>Electrodynamics</h3>
-            <div>
-              <p>The classical theory of electric and magnetic fields, building from Maxwell's equations to electromagnetic waves and radiation.</p>
-              <p class="topics">Electrostatics · magnetostatics · Maxwell's equations · electromagnetic waves · potentials and fields · radiation</p>
-            </div>
-          </article>
-          <article class="course">
-            <h3>Astrophysics and Astronomy</h3>
-            <div>
-              <p>How physical laws explain the observed universe, from stars and galaxies to cosmology and the messengers, including neutrinos and cosmic rays, that carry information to us.</p>
-              <p class="topics">Observational astronomy · stellar structure and evolution · galaxies · cosmology · astroparticle physics</p>
-            </div>
-          </article>
-        </div>
+{{COURSES}}
+        <p class="muted" style="font-size:.9rem;margin-top:1rem">Materials are provided for students enrolled at Xiamen University Malaysia. Please do not redistribute them without permission.</p>
       </div>
     </section>
 
-    <section class="section section--alt">
+    <section class="section section--white" id="supervision">
       <div class="wrap split">
         <div>
           <span class="label">Supervision</span>
@@ -42,7 +33,7 @@
         </div>
         <div>
           <p>Alongside lectures, I supervise final-year projects and postgraduate research. Students work on problems drawn directly from the group's research and learn the tools of the field: simulation, data analysis and laboratory measurement.</p>
-          <p><a class="more-link" href="group.html#join">Opportunities for students</a></p>
+          <p><a class="more-link" href="group.html">Current students and projects</a></p>
         </div>
       </div>
     </section>
