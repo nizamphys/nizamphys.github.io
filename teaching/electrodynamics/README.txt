@@ -1,1 +1,0 @@
-Put downloadable course files for this course here (PDF slides, notes, problem sets). Then set the "file" value in tools/teaching.json, e.g. "teaching/electrodynamics/lecture-01.pdf", and run python tools/build.py.
